@@ -41,7 +41,7 @@
                                 <animations/>
                                 <state key="normal" title="Join"/>
                                 <connections>
-                                    <segue destination="4t4-xK-pds" kind="show" id="m8y-kv-oUD"/>
+                                    <segue destination="CHg-NM-DLb" kind="show" id="UFh-0q-lve"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xjf-hh-g7I">
@@ -137,24 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iWA-Vh-Iwn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1579.5" y="-71.5"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="eqv-Yx-2N4">
-            <objects>
-                <navigationController id="4t4-xK-pds" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fve-0R-vwN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="CHg-NM-DLb" kind="relationship" relationship="rootViewController" id="hBH-4L-U4g"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="u3x-Kj-vi9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="765.5" y="42.5"/>
+            <point key="canvasLocation" x="1019.5" y="74.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Inz-ZJ-8aw">
