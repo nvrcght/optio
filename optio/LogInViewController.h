@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
+
+
 
 @interface LogInViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UITextField *usernameField;
@@ -15,5 +18,6 @@
 @property (strong, nonatomic) IBOutlet UIButton *loginButton;
 @property (strong, nonatomic) IBOutlet UIButton *joinButton;
 @property (strong, nonatomic) IBOutlet UIButton *forgotButton;
+@property (strong, nonatomic) IBOutlet FBSDKLoginButton *loginButtonFB;
 
 @end
