@@ -36,6 +36,12 @@
         }
         else{
             NSString *errorString = [error userInfo][@"error"];
+            UIAlertView * alert =[[UIAlertView alloc ] initWithTitle:@"Log in Error"
+                                                             message:errorString
+                                                            delegate:self
+                                                   cancelButtonTitle:@"Okay"
+                                                   otherButtonTitles: nil];
+            [alert show];
         }
     }];
 }

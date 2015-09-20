@@ -18,8 +18,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    PFUser *currentUser = [PFUser currentUser];
+    NSLog(@"CurrentUser: %@", currentUser.email);
 }
 
+- (IBAction)logInButtonPressed:(id)sender {
+    [PFUser logInWithUsernameInBackground:[self.usernameField text] password:[self.passwordField text]
+                                    block:^(PFUser *user, NSError *error) {
+                                        if (user) {
+                                            // Do stuff after successful login.
+                                            NSLog(@"Log In Successfull");
+                                        } else {
+                                            // The login failed. Check error to see why.
+                                        }
+                                    }];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
