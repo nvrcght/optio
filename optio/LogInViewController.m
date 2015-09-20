@@ -7,13 +7,15 @@
 //
 
 #import "LogInViewController.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 @interface LogInViewController ()
 
 @end
 
 @implementation LogInViewController
-@synthesize loginButton, joinButton, usernameField, passwordField, forgotButton;
+@synthesize loginButton, joinButton, usernameField, passwordField, forgotButton, loginButtonFB;
 
 - (void)viewDidLoad {
     [super viewDidLoad];

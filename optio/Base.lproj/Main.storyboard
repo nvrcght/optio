@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nCh-pn-gzT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nCh-pn-gzT">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
@@ -47,16 +47,21 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9RK-tq-jd2">
-                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <rect key="frame" x="166" y="305" width="42" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGq-1r-HRb">
-                                <rect key="frame" x="140" y="268" width="95" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6n-2N-g6H" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="113" y="334" width="148" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Forgot?"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGq-1r-HRb">
+                                <rect key="frame" x="119" y="253" width="142" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Forgot password?"/>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hE5-hP-VNc">
                                 <rect key="frame" x="20" y="183" width="335" height="30"/>
@@ -73,6 +78,7 @@
                         <outlet property="forgotButton" destination="pGq-1r-HRb" id="0fT-2U-sxL"/>
                         <outlet property="joinButton" destination="wRK-Vk-tFJ" id="iqx-YT-5eR"/>
                         <outlet property="loginButton" destination="Xjf-hh-g7I" id="7T4-hB-opj"/>
+                        <outlet property="loginButtonFB" destination="D6n-2N-g6H" id="5CT-Kl-xDb"/>
                         <outlet property="passwordField" destination="hE5-hP-VNc" id="bmh-cg-2nJ"/>
                         <outlet property="usernameField" destination="Dar-mE-UAA" id="KSA-ya-mga"/>
                     </connections>
