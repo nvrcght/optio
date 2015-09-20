@@ -31,7 +31,7 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
 //     self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    menuItems = @[@"Active Optio", @"Popular", @"Upload", @"My Active"];
+    menuItems = @[@"Active Optio", @"Popular", @"Upload", @"My Active", @"Log Out"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -94,7 +94,10 @@
             case 4:
                 //my active
                 NSLog(@"myactive");
-                
+            case 5:
+                //log out
+                NSLog(@"log out");
+                [PFUser logOut];
                 break;
             default:
                 break;
