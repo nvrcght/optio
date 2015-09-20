@@ -30,7 +30,7 @@
     if (![PFUser currentUser]) { // No user logged in
         // Create the log in view controller
         PFLogInViewController *logInViewController = [[PFLogInViewController alloc] init];
-        [logInViewController setFacebookPermissions:[NSArray arrayWithObjects:@"friends_about_me", nil]];
+//        [logInViewController setFacebookPermissions:[NSArray arrayWithObjects:@"friends_about_me", nil]];
         [logInViewController setFields: PFLogInFieldsFacebook | PFLogInFieldsUsernameAndPassword
          | PFLogInFieldsLogInButton | PFLogInFieldsSignUpButton | PFLogInFieldsPasswordForgotten];
         [logInViewController setDelegate:self]; // Set ourselves as the delegate
@@ -44,9 +44,13 @@
         
         // Present the log in view controller
         [self presentViewController:logInViewController animated:YES completion:NULL];
+
     }
+    
 
 }
+
+
 // Sent to the delegate to determine whether the log in request should be submitted to the server.
 - (BOOL)logInViewController:(PFLogInViewController *)logInController shouldBeginLogInWithUsername:(NSString *)username password:(NSString *)password {
     // Check if both fields are completed
@@ -80,5 +84,21 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+@end
+@interface MySignUpViewController : PFSignUpViewController
+
+@end
+
+@implementation MySignUpViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.view.backgroundColor = [UIColor darkGrayColor];
+    
+    UIImageView *logoView = [[UIImageView alloc] initWithImage:@"logo.png"];
+    self.signUpView.logo = logoView; // logo can be any UIView
+}
 
 @end

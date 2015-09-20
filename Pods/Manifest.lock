@@ -5,28 +5,45 @@ PODS:
   - Bolts/AppLinks (1.2.2):
     - Bolts/Tasks
   - Bolts/Tasks (1.2.2)
-  - Facebook-iOS-SDK (3.24.0):
-    - Bolts (~> 1.2)
+  - FBSDKCoreKit (4.6.0):
+    - Bolts (~> 1.1)
+    - FBSDKCoreKit/arc (= 4.6.0)
+    - FBSDKCoreKit/no-arc (= 4.6.0)
+  - FBSDKCoreKit/arc (4.6.0):
+    - Bolts (~> 1.1)
+  - FBSDKCoreKit/no-arc (4.6.0):
+    - Bolts (~> 1.1)
+    - FBSDKCoreKit/arc
+  - FBSDKLoginKit (4.6.0):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.6.0):
+    - FBSDKCoreKit
   - Parse (1.8.5):
     - Bolts/Tasks (>= 1.2.2)
-  - ParseFacebookUtils (1.8.5):
+  - ParseFacebookUtilsV4 (1.8.5):
     - Bolts/Tasks (>= 1.2.2)
-    - Facebook-iOS-SDK (~> 3.24)
-    - Parse (~> 1.8.5)
+    - FBSDKCoreKit (~> 4.0)
+    - FBSDKLoginKit (~> 4.0)
+    - Parse (~> 1.8.4)
   - ParseUI (1.1.6):
     - Bolts/Tasks (~> 1.2)
     - Parse (~> 1.8)
 
 DEPENDENCIES:
+  - FBSDKCoreKit
+  - FBSDKLoginKit
+  - FBSDKShareKit
   - Parse
-  - ParseFacebookUtils
+  - ParseFacebookUtilsV4
   - ParseUI
 
 SPEC CHECKSUMS:
   Bolts: 20a2bd788273360cb1e31530dc19b8544eef2544
-  Facebook-iOS-SDK: cb209af2e67e3a5d323f966c22e4e482e819405e
+  FBSDKCoreKit: 9954492d90c5fd65ae831395697a1660360d61f1
+  FBSDKLoginKit: 3d07febbfa884b9878cacba54f705bb41f07d4b6
+  FBSDKShareKit: f474f1123791e215d0299b98b3ee92ddd9187d86
   Parse: 17ad8e0677ed682f7f00503860fcda0f4eb74168
-  ParseFacebookUtils: 839b5f4a11aa1064a8e2c4be9babeaf052d54138
+  ParseFacebookUtilsV4: cc51857cf984c6fc743e7f17c2ddebdb6f02f963
   ParseUI: 8a22e448c03f825203d8c379c80523517f68baa3
 
 COCOAPODS: 0.38.2
