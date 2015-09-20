@@ -7,9 +7,9 @@
 //
 
 #import "LogInViewController.h"
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
-#import <FBSDKLoginKit/FBSDKLoginKit.h>
-#import <ParseFacebookUtilsV4/PFFacebookUtils.h>
+//#import <FBSDKCoreKit/FBSDKCoreKit.h>
+//#import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import "PFFacebookUtils.h"
 
 @interface LogInViewController ()
 
@@ -25,17 +25,17 @@
     NSLog(@"CurrentUser: %@", currentUser.email);
 }
 
-- (IBAction)facebooklogin:(id)sender {
-    [PFFacebookUtils logInInBackgroundWithReadPermissions:nil block:^(PFUser *user, NSError *error) {
-        if (!user) {
-            NSLog(@"Uh oh. The user cancelled the Facebook login.");
-        } else if (user.isNew) {
-            NSLog(@"User signed up and logged in through Facebook!");
-        } else {
-            NSLog(@"User logged in through Facebook!");
-        }
-    }];
-}
+//- (IBAction)facebooklogin:(id)sender {
+//    [PFFacebookUtils logInInBackgroundWithReadPermissions:nil block:^(PFUser *user, NSError *error) {
+//        if (!user) {
+//            NSLog(@"Uh oh. The user cancelled the Facebook login.");
+//        } else if (user.isNew) {
+//            NSLog(@"User signed up and logged in through Facebook!");
+//        } else {
+//            NSLog(@"User logged in through Facebook!");
+//        }
+//    }];
+//}
 
 
 - (void)didReceiveMemoryWarning {

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
-#import <FBSDKLoginKit/FBSDKLoginKit.h>
+//#import "FBSDKLoginKit.h"
 
 
 
