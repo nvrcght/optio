@@ -30,8 +30,16 @@
                                         if (user) {
                                             // Do stuff after successful login.
                                             NSLog(@"Log In Successfull");
+                                            [self performSegueWithIdentifier:@"success" sender:self];
                                         } else {
                                             // The login failed. Check error to see why.
+                                            UIAlertView * alert =[[UIAlertView alloc ] initWithTitle:@"Log in Error"
+                                                                                             message:@"Could not log in please check your username and or password"
+                                                                                            delegate:self
+                                                                                   cancelButtonTitle:@"Okay"
+                                                                                   otherButtonTitles: nil];
+                                            [alert show];
+                                            
                                         }
                                     }];
 }
