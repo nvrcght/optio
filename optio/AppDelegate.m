@@ -10,12 +10,14 @@
 #import <Parse/Parse.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import <ParseFacebookUtilsV4/PFFacebookUtils.h>
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
+
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -27,11 +29,15 @@
     // Initialize Parse.
     [Parse setApplicationId:@"8zZKAooDZIMYp4Nty8kT9JWsf6Tjh2tfJhVKRcoU"
                   clientKey:@"Eos4SdpPrJvI0t2JHJOJjKgyEEkU1Ln74zzZ4RsB"];
+    [PFFacebookUtils initializeFacebookWithApplicationLaunchOptions:launchOptions];
+
     
     // [Optional] Track statistics around application opens.
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     return [[FBSDKApplicationDelegate sharedInstance] application:application
-                                    didFinishLaunchingWithOptions:launchOptions];}
+                                    didFinishLaunchingWithOptions:launchOptions];
+    
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -56,15 +62,13 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 - (BOOL)application:(UIApplication *)application
-openURL:(NSURL *)url
+            openURL:(NSURL *)url
   sourceApplication:(NSString *)sourceApplication
          annotation:(id)annotation {
-    
     return [[FBSDKApplicationDelegate sharedInstance] application:application
                                                           openURL:url
                                                 sourceApplication:sourceApplication
                                                        annotation:annotation];
 }
-
 
 @end

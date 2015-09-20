@@ -18,6 +18,6 @@
 @property (strong, nonatomic) IBOutlet UIButton *loginButton;
 @property (strong, nonatomic) IBOutlet UIButton *joinButton;
 @property (strong, nonatomic) IBOutlet UIButton *forgotButton;
-@property (strong, nonatomic) IBOutlet FBSDKLoginButton *loginButtonFB;
+@property (strong, nonatomic) IBOutlet UIButton *loginButtonFB;
 
 @end

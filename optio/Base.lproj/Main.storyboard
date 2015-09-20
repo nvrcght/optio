@@ -56,10 +56,13 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6n-2N-g6H" customClass="FBSDKLoginButton">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6n-2N-g6H">
                                 <rect key="frame" x="113" y="334" width="148" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="facebooklogin:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oir-rC-stA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGq-1r-HRb">
                                 <rect key="frame" x="119" y="253" width="142" height="30"/>
@@ -75,14 +78,14 @@
                         <outlet property="forgotButton" destination="pGq-1r-HRb" id="0fT-2U-sxL"/>
                         <outlet property="joinButton" destination="wRK-Vk-tFJ" id="iqx-YT-5eR"/>
                         <outlet property="loginButton" destination="Xjf-hh-g7I" id="7T4-hB-opj"/>
-                        <outlet property="loginButtonFB" destination="D6n-2N-g6H" id="5CT-Kl-xDb"/>
+                        <outlet property="loginButtonFB" destination="D6n-2N-g6H" id="qCQ-WV-U7b"/>
                         <outlet property="passwordField" destination="hE5-hP-VNc" id="bmh-cg-2nJ"/>
                         <outlet property="usernameField" destination="Dar-mE-UAA" id="KSA-ya-mga"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="220.5" y="89.5"/>
+            <point key="canvasLocation" x="292.5" y="285.5"/>
         </scene>
         <!--Create an account-->
         <scene sceneID="R8E-Rb-KZD">
@@ -143,7 +146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iWA-Vh-Iwn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1019.5" y="74.5"/>
+            <point key="canvasLocation" x="1043.5" y="285.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Inz-ZJ-8aw">
