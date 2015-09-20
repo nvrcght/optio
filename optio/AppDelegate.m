@@ -10,8 +10,8 @@
 #import <Parse/Parse.h>
 //#import "FBSDKCoreKit.h"
 //#import "FBSDKLoginKit.h"
-//#import <ParseFacebookUtilsV4/PFFacebookUtils.h>
 #import "PFFacebookUtils.h"
+#import "FBSDKCoreKit.h"
 
 @interface AppDelegate ()
 
@@ -30,19 +30,31 @@
     // Initialize Parse.
     [Parse setApplicationId:@"8zZKAooDZIMYp4Nty8kT9JWsf6Tjh2tfJhVKRcoU"
                   clientKey:@"Eos4SdpPrJvI0t2JHJOJjKgyEEkU1Ln74zzZ4RsB"];
-//    [PFFacebookUtils initializeFacebookWithApplicationLaunchOptions:launchOptions];
-    [PFFacebookUtils initializeFacebook];
+    [PFFacebookUtils initializeFacebookWithApplicationLaunchOptions:launchOptions];
+//    [PFFacebookUtils initializeFacebook];
     PFACL *defaultACL = [PFACL ACL];
     [defaultACL setPublicReadAccess:YES];
     [PFACL setDefaultACL:defaultACL withAccessForCurrentUser:YES];
     
     // [Optional] Track statistics around application opens.
-    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+   
+//    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
 //    return [[FBSDKApplicationDelegate sharedInstance] application:application
 //                                    didFinishLaunchingWithOptions:launchOptions];
-    return YES;
+//    
+    
+    
+    [PFFacebookUtils initializeFacebookWithApplicationLaunchOptions:launchOptions];
+    
+    return [[FBSDKApplicationDelegate sharedInstance] application:application
+            
+                                    didFinishLaunchingWithOptions:launchOptions];;
+   
     
 }
+
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -61,28 +73,27 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 //    [FBSDKAppEvents activateApp];
-    [FBSession.activeSession handleDidBecomeActive];
+//    [PFSession.activeSession handleDidBecomeActive];
+    [FBSDKAppEvents activateApp];
+
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
-    return [PFFacebookUtils handleOpenURL:url];
-}
+//- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+//    return [PFFacebookUtils handleOpenURL:url];
+//}
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
   sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    return [PFFacebookUtils handleOpenURL:url];
+//    return [PFFacebookUtils handleOpenURL:url];
+    return [[FBSDKApplicationDelegate sharedInstance] application:application
+                                                          openURL:url
+                                                sourceApplication:sourceApplication
+                                                       annotation:annotation
+            ];
 }
-//- (BOOL)application:(UIApplication *)application
-//            openURL:(NSURL *)url
-//  sourceApplication:(NSString *)sourceApplication
-//         annotation:(id)annotation {
-//    return [[FBSDKApplicationDelegate sharedInstance] application:application
-//                                                          openURL:url
-//                                                sourceApplication:sourceApplication
-//                                                       annotation:annotation];
-//}
+
 
 @end

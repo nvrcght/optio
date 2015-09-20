@@ -9,7 +9,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Facebook-iOS-SDK.xcscheme</key>
+		<key>FBSDKCoreKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FBSDKLoginKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FBSDKShareKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -19,7 +29,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ParseFacebookUtils.xcscheme</key>
+		<key>ParseFacebookUtilsV4.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,32 +47,42 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>412735D4209B3041EDF2EB97BD5DB3A2</key>
+		<key>05D5A48172EA166796F5EC6C8181BFCB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4F6C476E7DD2A00C1929BFDB9B8C02FF</key>
+		<key>19D79EFFAC23CED0A8F2022E46C06142</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>70372E71B1E1E4C8EF46D9BB59F5FE58</key>
+		<key>4B3D9256F686A491F81105F12F96D10A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8E5FB249B3A8B224F0B4F58C67926321</key>
+		<key>71A756DB3A11C5D37639843F71F2B765</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E251214AA286CE9BE958F4D27FF0DA1B</key>
+		<key>94C952320CD5F357303D63667F7BD1F4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F51C8463F5C76B625F24327DA0802B08</key>
+		<key>C4B6841D3EEE5ABFC6BCDE99EEEC094A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CDFD41FD3E4EFE43D9A8F72030EEBA51</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FFF0BA9C7496FF6394182FCBAB53EC2F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
