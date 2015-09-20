@@ -63,36 +63,6 @@
             </objects>
             <point key="canvasLocation" x="1121.5" y="1748.5"/>
         </scene>
-        <!--Setttings View Controller-->
-        <scene sceneID="vs6-t3-8Jt">
-            <objects>
-                <viewController id="aiw-dp-P2e" customClass="SetttingsViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="hBn-I0-zRU"/>
-                        <viewControllerLayoutGuide type="bottom" id="mkP-TM-wmY"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="wDU-qO-7ox">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1h-zB-TgM">
-                                <rect key="frame" x="20" y="20" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="dismiss:" destination="aiw-dp-P2e" eventType="touchUpInside" id="qCC-cM-vDF"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vQt-fp-HsQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="57.5" y="1748.5"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="sCb-3R-5vD">
             <objects>
@@ -274,14 +244,6 @@
                                                 <action selector="profilePicClicked:" destination="Pm6-tg-abE" eventType="touchUpInside" id="tMA-sC-OI3"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLH-nX-R6v">
-                                            <rect key="frame" x="216" y="13" width="27" height="18"/>
-                                            <animations/>
-                                            <state key="normal" image="Settings.png"/>
-                                            <connections>
-                                                <segue destination="aiw-dp-P2e" kind="show" id="Run-AZ-SYb"/>
-                                            </connections>
-                                        </button>
                                     </subviews>
                                     <animations/>
                                 </tableViewCellContentView>
@@ -328,7 +290,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Settings.png" width="22" height="22"/>
         <image name="Test-Pattern-1600x1200-32.jpg" width="1600" height="1200"/>
         <image name="menu.png" width="28" height="20"/>
         <image name="placeholder.png" width="622" height="415"/>

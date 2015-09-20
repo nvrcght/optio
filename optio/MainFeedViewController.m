@@ -86,19 +86,19 @@
 */
 
 @end
-@interface MySignUpViewController : PFSignUpViewController
-
-@end
-
-@implementation MySignUpViewController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    self.view.backgroundColor = [UIColor darkGrayColor];
-    
-    UIImageView *logoView = [[UIImageView alloc] initWithImage:@"logo.png"];
-    self.signUpView.logo = logoView; // logo can be any UIView
-}
-
-@end
+//@interface MySignUpViewController : PFSignUpViewController
+//
+//@end
+//
+//@implementation MySignUpViewController
+//
+//- (void)viewDidLoad {
+//    [super viewDidLoad];
+//    
+//    self.view.backgroundColor = [UIColor darkGrayColor];
+//    
+//    UIImageView *logoView = [[UIImageView alloc] initWithImage:@"logo.png"];
+//    self.signUpView.logo = logoView; // logo can be any UIView
+//}
+//
+//@end

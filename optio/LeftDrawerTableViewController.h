@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface LeftDrawerTableViewController : UITableViewController <UIGestureRecognizerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@property (strong, nonatomic) IBOutlet UIButton *settingsButton;
 
 @end

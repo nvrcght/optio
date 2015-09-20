@@ -144,6 +144,9 @@
     [self selectPhoto];
 
 }
+- (IBAction)logout:(id)sender {
+    [PFUser logOut];
+}
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
